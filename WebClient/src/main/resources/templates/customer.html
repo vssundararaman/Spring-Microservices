@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Customer</title>
+</head>
+<body>
+	<h1>Customer</h1>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a title="Spring IO" href="http://www.spring.io"> </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<table>
+			<th:block th:each="customer : ${customers}">
+				<tr>
+					<td th:text="${customer.id}">...</td>
+					<td th:text="${customer.name}">...</td>
+					<td th:text="${customer.discountCode}">...</td>
+					<td th:text="${customer.zip}">...</td>
+					<td th:text="${customer.addressLine1}">...</td>
+					<td th:text="${customer.addressLine2}">...</td>
+					<td th:text="${customer.city}">...</td>
+					<td th:text="${customer.phone}">...</td>
+					<td th:text="${customer.fax}">...</td>
+					<td th:text="${customer.email}">...</td>
+					<td th:text="${customer.creditLimit}">...</td>
+				</tr>
+			</th:block>
+		</table>
+	</div>
+	
+	
+</body>
+</html>
